@@ -1,1 +1,0 @@
-Aplikasi ini merupakan Sistem sederhana yang dapat mengelola pendaftaran detail anggota. Sistem ini menggunakan prinsip dasar CRUD untuk memanipulasi data dengan menambahkan, memperbarui, dan menghapus data. Semua input data disimpan ke basis data SQLite.

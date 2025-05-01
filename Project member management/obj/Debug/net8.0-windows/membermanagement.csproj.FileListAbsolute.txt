@@ -1,0 +1,16 @@
+D:\Project\c#\membermanagement\bin\Debug\net8.0-windows\membermanagement.exe
+D:\Project\c#\membermanagement\bin\Debug\net8.0-windows\membermanagement.deps.json
+D:\Project\c#\membermanagement\bin\Debug\net8.0-windows\membermanagement.runtimeconfig.json
+D:\Project\c#\membermanagement\bin\Debug\net8.0-windows\membermanagement.dll
+D:\Project\c#\membermanagement\bin\Debug\net8.0-windows\membermanagement.pdb
+D:\Project\c#\membermanagement\obj\Debug\net8.0-windows\membermanagement.Form1.resources
+D:\Project\c#\membermanagement\obj\Debug\net8.0-windows\membermanagement.csproj.GenerateResource.cache
+D:\Project\c#\membermanagement\obj\Debug\net8.0-windows\membermanagement.GeneratedMSBuildEditorConfig.editorconfig
+D:\Project\c#\membermanagement\obj\Debug\net8.0-windows\membermanagement.AssemblyInfoInputs.cache
+D:\Project\c#\membermanagement\obj\Debug\net8.0-windows\membermanagement.AssemblyInfo.cs
+D:\Project\c#\membermanagement\obj\Debug\net8.0-windows\membermanagement.csproj.CoreCompileInputs.cache
+D:\Project\c#\membermanagement\obj\Debug\net8.0-windows\membermanagement.dll
+D:\Project\c#\membermanagement\obj\Debug\net8.0-windows\refint\membermanagement.dll
+D:\Project\c#\membermanagement\obj\Debug\net8.0-windows\membermanagement.pdb
+D:\Project\c#\membermanagement\obj\Debug\net8.0-windows\membermanagement.genruntimeconfig.cache
+D:\Project\c#\membermanagement\obj\Debug\net8.0-windows\ref\membermanagement.dll
