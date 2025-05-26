@@ -64,7 +64,7 @@ namespace MemberManagementSystem
             lblName.Size = new Size(63, 25);
             lblName.TabIndex = 1;
             lblName.Text = "Nama:";
-            lblName.Click += lblName_Click;
+            //lblName.Click += lblName_Click;
             // 
             // txtName
             // 

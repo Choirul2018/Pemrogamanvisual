@@ -27,8 +27,9 @@ namespace MemberManagementSystem
                     return;
                 }
 
-                // Ambil data member dari database
-                members = Connect.GetAllMembers();
+                // Gunakan service GetAllMembersService
+                var getService = new GetAllMember();
+                members = getService.GetAll();
                 RefreshMemberList();
             }
             catch (Exception ex)
@@ -58,7 +59,9 @@ namespace MemberManagementSystem
             if (addMemberForm.ShowDialog() == DialogResult.OK)
             {
                 Member newMember = addMemberForm.GetMember();
-                if (Connect.AddMember(newMember))
+
+                var addService = new AddMember();
+                if (addService.Add(newMember))
                 {
                     LoadMembers(); // Reload data dari database
                     MessageBox.Show("Member sukses ditambahkan!", "Success",
@@ -76,7 +79,9 @@ namespace MemberManagementSystem
                 if (editMemberForm.ShowDialog() == DialogResult.OK)
                 {
                     Member updatedMember = editMemberForm.GetMember();
-                    if (Connect.UpdateMember(updatedMember))
+
+                    var updateService = new UpdateMember();
+                    if (updateService.Update(updatedMember))
                     {
                         LoadMembers(); // Reload data dari database
                         MessageBox.Show("Member berhasil diperbarui!", "Success",
@@ -86,7 +91,7 @@ namespace MemberManagementSystem
             }
             else
             {
-                MessageBox.Show("pilih member yang akan di perbarui.", "No Selection",
+                MessageBox.Show("Pilih member yang akan diperbarui.", "No Selection",
                                 MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
         }
@@ -99,7 +104,8 @@ namespace MemberManagementSystem
                 if (MessageBox.Show($"Apa kamu yakin akan menghapus data ini?: {selectedMember.Name}?",
                                    "Confirm Delete", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
                 {
-                    if (Connect.DeleteMember(selectedMember.Id))
+                    var deleteService = new DeleteMember();
+                    if (deleteService.Delete(selectedMember.Id))
                     {
                         LoadMembers(); // Reload data dari database
                         MessageBox.Show("Member berhasil dihapus!", "Success",
@@ -121,7 +127,7 @@ namespace MemberManagementSystem
 
         private void listViewMembers_SelectedIndexChanged(object sender, EventArgs e)
         {
-
+            
         }
     }
 }

@@ -67,6 +67,14 @@ namespace MemberManagementSystem
             DialogResult = DialogResult.Cancel;
             Close();
         }
+        private void lblPhone_Click(object sender, EventArgs e)
+        {
+
+        }
+        private void lblName_Click(object sender, EventArgs e)
+        {
+
+        }
 
     }
 }
